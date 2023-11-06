@@ -1,6 +1,6 @@
 function ConvertHandler() {
   this.getNum = (input) => {
-    const regex = /[/].+[/]/g
+    const regex = /[/].*[/]/g
     if (regex.test(input)) {
       return undefined
     }
