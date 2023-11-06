@@ -147,4 +147,6 @@ suite("Unit Tests", function() {
     assert.equal(convertHandler.convert(input[0], input[1]), result[0])
     done()
   })
+
 })
+

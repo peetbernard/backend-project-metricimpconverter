@@ -54,5 +54,20 @@ suite("Functional Tests", function () {
         done()
       })
   })
-}
-     )
+  test("/api/convert kg", function (done) {
+    chai
+      .request(server)
+      .get("/api/convert")
+      .query({ input: "kg" })
+      .end(function (err, res) {
+        assert.equal(res.status, 200)
+        assert.equal(res.body.initNum, 1)
+        assert.equal(res.body.initUnit, "kg")
+        done()
+      })
+  })
+})
+
+after(function() {
+    chai.request(server).get('/')
+})
