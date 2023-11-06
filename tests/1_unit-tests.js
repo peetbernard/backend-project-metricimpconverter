@@ -106,7 +106,7 @@ suite("Unit Tests", function () {
 
   test("L to gal", function () {
     const input = [1, "L"]
-    const result = [1/3.78541]
+    const result = [0.26417]
     assert.equal(convertHandler.convert(input[0],input[1]), result[0])
   })
 
@@ -118,19 +118,19 @@ suite("Unit Tests", function () {
 
   test("km to mi", function () {
     const input = [1, "km"]
-    const result = [1/1.60934]
+    const result = [0.62137]
     assert.equal(convertHandler.convert(input[0],input[1]), result[0])
   })
 
   test("lbs to kg", function () {
     const input = [1, "lbs"]
-    const result = [0.453592]
+    const result = [0.45359]
     assert.equal(convertHandler.convert(input[0],input[1]), result[0])
   })
 
   test("kg to lbs", function () {
     const input = [1, "kg"]
-    const result = [1/0.453592]
+    const result = [2.20462]
     assert.equal(convertHandler.convert(input[0],input[1]), result[0])
   })
 })

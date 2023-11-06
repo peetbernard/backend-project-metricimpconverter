@@ -75,17 +75,17 @@ function ConvertHandler() {
 
     switch (initUnit) {
       case "lbs":
-        return initNum * lbsToKg
+        return Number(parseFloat(initNum * lbsToKg).toFixed(5))
       case "gal":
-        return initNum * galToL
+        return Number(parseFloat(initNum * galToL).toFixed(5))
       case "km":
-        return initNum / miToKm
+        return Number(parseFloat(initNum / miToKm).toFixed(5))
       case "kg":
-        return initNum / lbsToKg
+        return Number(parseFloat(initNum / lbsToKg).toFixed(5))
       case "L":
-        return initNum / galToL
+        return Number(parseFloat(initNum / galToL).toFixed(5))
       case "mi":
-        return initNum * miToKm
+        return Number(parseFloat(initNum * miToKm).toFixed(5))
     }
   }
 
